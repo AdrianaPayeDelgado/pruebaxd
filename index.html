@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+nav#nav1{ margin-top: 100px; padding: 150px;}
+nav#nav1 > a{ background:#f75d90; color:#000; padding:67px; text-decoration:none; border-radius:20px; font-family:"Arial Black", Gadget, sans-serif; }
+nav#nav1 > a:hover{ background: #BBEA00; }
+nav#nav1 > a:active{ background: #e2ff9f; }
+</style>
+<script>
+var bleep = new Audio();
+bleep.src = 'bleep.mp3';
+
+var si = new Audio();
+si.src = 'si.mp3';
+
+var sol = new Audio();
+sol.src = 'sol.mp3';
+
+var re = new Audio();
+re.src = 're.mp3';
+
+var mi = new Audio();
+mi.src = 'mi.mp3';
+</script>
+</head>
+<body>
+  <nav id="nav1">
+    <a href="#" onmousedown="bleep.play()">BOOP</a>
+    <a href="#" onmousedown="mi.play()">MI</a>
+    <a href="#" onmousedown="sol.play()">SOL</a>
+    <a href="#" onmousedown="re.play()">RE</a>
+    <a href="#" onmousedown="si.play()">SI</a>
+    <a href="#" onmousedown="sol.play()">SOL</a>
+    <a href="#" onmousedown="bleep.play()">BOOP</a>
+  </nav>
+</body>
+</html>
